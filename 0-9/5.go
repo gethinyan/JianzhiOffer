@@ -2,13 +2,17 @@ package main
 
 import "fmt"
 
+// 题目: 用两个栈实现队列
+
 var stack1 []int
 var stack2 []int
 
+// Push ...
 func Push(node int) {
 	stack1 = append(stack1, node)
 }
 
+// Pop ...
 func Pop() int {
 	result := 0
 	if len(stack2) > 0 {

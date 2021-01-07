@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// 题目: 旋转数组的最小数字
+
 /**
  *
  * @param rotateArray int整型一维数组

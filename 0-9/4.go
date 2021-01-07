@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// 题目: 重建二叉树
+
+// TreeNode ...
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode

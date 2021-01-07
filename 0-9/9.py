@@ -1,17 +1,20 @@
 # -*- coding:utf-8 -*-
+# 题目: 变态跳台阶
+
 class Solution:
-    def rectCover(self, number):
+    def jumpFloorII(self, number):
         # write code here
-        if number == 0:
-            return 0
-        firstNum = 1
-        secondNum = 2
+        result = [1, 2]
         index = 2
-        while index <= number:
-            firstNum, secondNum = secondNum, firstNum + secondNum
+        while index < number:
+            sumNum = 0
+            for num in result:
+                sumNum += num
+            sumNum += 1
+            result.append(sumNum)
             index += 1
-        return firstNum
+        return result[number - 1]
 
 
 obj = Solution()
-print(obj.rectCover(6))
+print(obj.jumpFloorII(6))

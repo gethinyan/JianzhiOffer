@@ -1,21 +1,17 @@
 # -*- coding:utf-8 -*-
-# 题目: 变态跳台阶
-
+# 题目: 跳台阶
 
 class Solution:
-    def jumpFloorII(self, number):
+    def jumpFloor(self, number):
         # write code here
-        result = [1, 2]
+        firstNum = 1
+        secondNum = 2
         index = 2
-        while index < number:
-            sumNum = 0
-            for num in result:
-                sumNum += num
-            sumNum += 1
-            result.append(sumNum)
+        while index <= number:
+            firstNum, secondNum = secondNum, firstNum + secondNum
             index += 1
-        return result[number - 1]
+        return firstNum
 
 
 obj = Solution()
-print(obj.jumpFloorII(6))
+print(obj.jumpFloor(6))

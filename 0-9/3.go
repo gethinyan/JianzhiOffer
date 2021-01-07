@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// 题目: 从尾到头打印链表
+
+// ListNode ...
 type ListNode struct {
 	Val  int
 	Next *ListNode

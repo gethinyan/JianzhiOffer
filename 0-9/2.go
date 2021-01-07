@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// 题目: 替换空格
+
+// ReplaceSpace ...
 func ReplaceSpace(s string) string {
 	//write your code here
 	sNew := ""
